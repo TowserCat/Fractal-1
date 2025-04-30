@@ -1,0 +1,101 @@
+canvas{
+    width: 1200px;
+    height: 675px;
+    background-color: rgb(224, 224, 224);
+    border: 3px solid;
+}
+#fractal{
+    text-align: center;
+}
+#title{
+    font-size: 70px;
+}
+button{
+    margin:4px;
+    width: 595px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(224, 224, 224);
+}
+input{
+    margin:4px;
+    width: 586px;
+    height: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(224, 224, 224);
+}
+#Reset{
+    margin:4px;
+    width: 1203px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(224, 224, 224);
+}
+#save{
+    margin:4px;
+    width: 1203px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(224, 224, 224);
+}
+#stop{
+    margin:4px;
+    width: 595px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(224, 224, 224);
+}
+#unpause{
+    margin:4px;
+    width: 595px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(224, 224, 224);
+}
+#speed1{
+    margin:4px;
+    width: 291px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(224, 224, 224);
+}
+#speed2{
+    margin:4px;
+    width: 292px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(224, 224, 224);
+}
+#speed3{
+    margin:4px;
+    width: 292px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(224, 224, 224);
+}
+#speed4{
+    margin:4px;
+    width: 291px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(224, 224, 224);
+}
+#description{
+    width: 1200px;
+    word-wrap: break-word;
+    margin: 0 auto;
+    text-align: center;
+}
+#backround{
+    width: 1194px;
+}
