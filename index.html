@@ -1,0 +1,63 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="fractal">
+        <p1 id="title">Quasi-fractal generator</p1>
+        <hr>
+        <canvas id="canvas" width="1200" height="675"></canvas>
+        <br>
+        <button id="Reset" onClick="resetScreen()">Reset</button>
+        <br>
+        <button id="save" onClick="saveInput()">Save input</button>
+        <br>
+        <button id="stop" onClick="stop()">Pause</button>
+        <button id="unpause" onClick="unpause()">Unpause</button>
+        <div id="buttons">
+            <button id="Run" onClick="createScreen()">Create picture with random colors</button>
+            <button id="RunRandColor" onClick="createScreenRandColor()">Create picture with static colors</button>
+            <br>
+            <button id="RunAtCenter" onClick="createScreenAtCenter()">Create picture at center with random colors</button>
+            <button id="RunAtCenterRandColor" onClick="createScreenAtCenterRandColor()">Create picture at center with static colors</button>
+            <br>
+            <button id="repeat" onClick="run()">Run with random colors</button>
+            <button id="repeatRandColor" onClick="runRandColor()">Run with static colors</button>
+            <br>
+            <button id="repeatAtCenter" onClick="runAtCenter()">Run at center with random colors</button>
+            <button id="repeatAtCenterRandColor" onClick="runAtCenterRandColor()">Run at center with static colors</button>
+        </div>
+        <div id="inputs">
+            <input id="backround" placeholder="Backround color?">
+            <br>
+            <input id="width" placeholder="Width of screen?">
+            <input id="height" placeholder="Height of screen?">
+            <br>
+            <input id="times" placeholder="Speed for running?">
+            <input id="layers" placeholder="Amount of strings for creating a picture?">
+            <br>
+            <input id="quality" placeholder="Quality for creating picture?">
+            <input id="length" placeholder="Length for creating picture?">
+        </div>
+        <hr>
+        <div id="description">
+            <h1>Description:</p1>
+            <h4>This code creates a fractal like design.  A sort of "quasi-fractal," if you will.  It starts by choosing an origin point to spawn a string and then move that point around and color it as it goes.  If the point ever goes outside of the screen, it will go back to its original starting point.  The width and height of the screen are exactly as you would think.  The speed is also the same.  While ten may be kind of slow, anywhere above 750 will start to lag your computer depending on its "beefyness." The amount of strings can also be pretty laggy. A good number is ten.  The quality is basically how grainy the image is.  If the quality is high, like ten, it will look incredibly grainy.  The length of the image is what can make your computer really lag.  It is what takes that origin and shifts it.  The bigger the length, the more times it will shift that point and color accordingly.  </h4>
+            <h1>Inputing numbers:</h1>
+            <h4>Before beggining, it is very worth noting that most of the inputs cannot be below 1, (with the exception of speed wich with 0 will just pause itself.)  Any other inputs being 0 or negative will result either in an error or even a crash or freeze (or the entire thing just breaking).  The amount of strings and length of strings are the most laggy.  You can think of laggyness as being aproximetly the amount of strings times the length of the strings.  Good numbers to plug in for them could be the following in order of Strings to Length.  1:100000, 7;10000, 100:1000, 1000:100, 10000:7, 100000:1.  The default numbers are "7" for amount, and "12345" for length.  Quality is kind of dumb to put it quite frankly.  Anything above 1 looks bad.  The default is believe it or not, "1."  The speed is exactly as it sounds.  It can get INCREDIBLY laggy.  Anywhere above 1000 and an ordinary computer is cooked, to put it kindly.  The default is 100 but anywhere from 1 to around 750 should be fine.  The width and height of the screen are very self explanatory.  The default is 1200x675, wich ensures it fits perfectly into a 16 by 9 aspect ratio, (The average aspect ratio).  The backround is also quite self explanatory.  The default is black.  Just make sure to input it correctly.</h4>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
